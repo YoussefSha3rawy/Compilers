@@ -1,0 +1,9 @@
+grammar Example2;
+
+s: NUMBER EOF;
+
+DIGIT: [0-9];
+DIGITS: DIGIT+;
+FRAC: '.' DIGITS;
+EXP: 'E' [+-]? DIGITS;
+NUMBER: DIGITS FRAC? EXP?;
