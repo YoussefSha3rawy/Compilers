@@ -1,9 +1,9 @@
 /**
  * Write your info here
  *
- * @name John Smith
- * @id 43-0234
- * @labNumber 07
+ * @name Youssef Shaarawy
+ * @id 43-3973
+ * @labNumber 10
  */
 
 grammar Task9;
@@ -23,18 +23,23 @@ grammar Task9;
 
 s returns [int check]:
  // Write the definition of parser rule "s" here
- a c b {$check = equals($a.n,$b.n) * equals($a.n,$c.n);};
+ a c b { $check = equals($a.n,$b.n) *equals($a.n,$c.n); };
 
-a returns [int n]: A A1=a {$n= $A1.n + 1;}|
-{$n = 0;};
+a returns [int n]:
+ A A2=a { $n= $A2.n + 1; }
+ | { $n = 0; };
 
-b returns [int n]: B B1=b {$n= $B1.n + 1;}|
-{$n = 0;};
+b returns [int n]:
+ B B2=b {$n= $B2.n + 1;}
+ | { $n = 0; };
 
-c returns [int n]: C C1=c {$n= $C1.n + 1;}|
-{$n = 0;};
+c returns [int n]:
+ C C2=c {$n= $C2.n + 1;}
+ | { $n = 0; };
 
 // Write additional lexer and parser rules here
-A: 'a';
-B: 'b';
-C: 'c';
+
+
+A:'a';
+B:'b';
+C:'c';

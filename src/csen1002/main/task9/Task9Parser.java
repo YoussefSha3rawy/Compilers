@@ -146,7 +146,7 @@ public class Task9Parser extends Parser {
 			((SContext)_localctx).c = c();
 			setState(10);
 			((SContext)_localctx).b = b();
-			((SContext)_localctx).check =  equals(((SContext)_localctx).a.n,((SContext)_localctx).b.n) * equals(((SContext)_localctx).a.n,((SContext)_localctx).c.n);
+			 ((SContext)_localctx).check =  equals(((SContext)_localctx).a.n,((SContext)_localctx).b.n) *equals(((SContext)_localctx).a.n,((SContext)_localctx).c.n); 
 			}
 		}
 		catch (RecognitionException re) {
@@ -162,7 +162,7 @@ public class Task9Parser extends Parser {
 
 	public static class AContext extends ParserRuleContext {
 		public int n;
-		public AContext A1;
+		public AContext A2;
 		public TerminalNode A() { return getToken(Task9Parser.A, 0); }
 		public AContext a() {
 			return getRuleContext(AContext.class,0);
@@ -199,8 +199,8 @@ public class Task9Parser extends Parser {
 				setState(13);
 				match(A);
 				setState(14);
-				((AContext)_localctx).A1 = a();
-				((AContext)_localctx).n =  ((AContext)_localctx).A1.n + 1;
+				((AContext)_localctx).A2 = a();
+				 ((AContext)_localctx).n =  ((AContext)_localctx).A2.n + 1; 
 				}
 				break;
 			case EOF:
@@ -208,7 +208,7 @@ public class Task9Parser extends Parser {
 			case C:
 				enterOuterAlt(_localctx, 2);
 				{
-				((AContext)_localctx).n =  0;
+				 ((AContext)_localctx).n =  0; 
 				}
 				break;
 			default:
@@ -228,7 +228,7 @@ public class Task9Parser extends Parser {
 
 	public static class BContext extends ParserRuleContext {
 		public int n;
-		public BContext B1;
+		public BContext B2;
 		public TerminalNode B() { return getToken(Task9Parser.B, 0); }
 		public BContext b() {
 			return getRuleContext(BContext.class,0);
@@ -265,14 +265,14 @@ public class Task9Parser extends Parser {
 				setState(20);
 				match(B);
 				setState(21);
-				((BContext)_localctx).B1 = b();
-				((BContext)_localctx).n =  ((BContext)_localctx).B1.n + 1;
+				((BContext)_localctx).B2 = b();
+				((BContext)_localctx).n =  ((BContext)_localctx).B2.n + 1;
 				}
 				break;
 			case EOF:
 				enterOuterAlt(_localctx, 2);
 				{
-				((BContext)_localctx).n =  0;
+				 ((BContext)_localctx).n =  0; 
 				}
 				break;
 			default:
@@ -292,7 +292,7 @@ public class Task9Parser extends Parser {
 
 	public static class CContext extends ParserRuleContext {
 		public int n;
-		public CContext C1;
+		public CContext C2;
 		public TerminalNode C() { return getToken(Task9Parser.C, 0); }
 		public CContext c() {
 			return getRuleContext(CContext.class,0);
@@ -329,15 +329,15 @@ public class Task9Parser extends Parser {
 				setState(27);
 				match(C);
 				setState(28);
-				((CContext)_localctx).C1 = c();
-				((CContext)_localctx).n =  ((CContext)_localctx).C1.n + 1;
+				((CContext)_localctx).C2 = c();
+				((CContext)_localctx).n =  ((CContext)_localctx).C2.n + 1;
 				}
 				break;
 			case EOF:
 			case B:
 				enterOuterAlt(_localctx, 2);
 				{
-				((CContext)_localctx).n =  0;
+				 ((CContext)_localctx).n =  0; 
 				}
 				break;
 			default:
